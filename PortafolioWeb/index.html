@@ -1,0 +1,821 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>GCaravaca</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="Imagenes/Favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!--  Hoja de estilo AOS JS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="d-flex flex-column flex-shrink-0 bg-light" id="sidebar">
+
+    <div href="" class="d-block p-2 link-dark text-decoration-none text-center" id="sidebarLogo" title="" data-bs-toggle="tooltip"
+      data-bs-placement="right" data-bs-original-title="Icon-only">
+      <img class="sidebarImage" src="Imagenes/Favicon.png" alt="Icon" />
+      <span class="visually-hidden">Icon-only</span>
+    </div>
+
+    <ul class="nav nav-pills mb-auto text-center">
+      <li class="nav-item">
+        <a href="#banner" class="nav-link active sidebarButtonSize" aria-current="page" title=""
+          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/home.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#sobre-mi" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="About_me">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/info.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#Experience" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="Portfolio">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/portfolio.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#Resume" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="CV">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/cv.png" alt="Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#Contacts" class="nav-link sidebarButtonSize" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="Contacts">
+          <img class="sidebarImage" src="Imagenes/SideBarIcons/contact.png" alt="Icon" />
+        </a>
+      </li>
+
+      <!-- Rounded switch -->
+      <li class="nav-item switch-container justify-content-center text-center pt-1 w-100">
+        <span class="switch-label">ES</span>
+        <label class="switch">
+          <input type="checkbox" id="language-switch" />
+          <span class="slider round"></span>
+        </label>
+        <span class="switch-label">EN</span>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+  <!-- SCROLLTOP -->
+  <button id="scrollTopBtn" onclick="scrollToTop()">
+    <img src="Imagenes/ScrollTop.png">
+  </button>
+
+
+
+
+
+  <!-- BANNER -->
+  <div class="fluid-container" id="banner">
+    <div class="image-container">
+      <img class="background-image" src="Imagenes/banner.jpg" />
+      <img class="foreground-image" src="Imagenes/WhiteRavenLogo_NoBG.png" />
+    </div>
+  </div>
+
+
+
+
+
+  <!-- PERFIL PROFESIONAL -->
+   <div id="perfil-profesional">
+    <div class="lang es">
+      <h1></h1>
+      <p>
+        Ingeniero de software full-stack, especializado en Bootstrap,
+        JavaScript, C#, C++, y SQL, con habilidades en diseño de interfaces,
+        desarrollo backend y gestión de bases de datos.
+      </p>
+    </div>
+    <div class="lang en">
+      <h1></h1>
+      <p>
+        Full-stack software engineer, specialized in Bootstrap, JavaScript, C#, C++, and SQL, with skills in interface
+        design, backend development, and database management.
+      </p>
+    </div>
+   </div>
+
+
+
+
+
+  <!-- SOBRE MI -->
+  <div id="sobre-mi" class="pb-5">
+    <h1 class="text-center lang es">Sobre Mi</h1>
+    <h1 class="text-center lang en">About me</h1>
+
+    <div class="container-fluid pt-3">
+      <div class="row justify-content-center g-1">
+        <div class="col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+          <div class="card animContainer">
+            <!-- Card 1 -->
+            <div class="card-img-top text-center">
+              <lottie-player id="MissionAnim"
+                src="https://lottie.host/9433b8a8-ad13-4151-a728-516aaf3bd11d/ceJgI40Kz5.json" autoplay
+                loop></lottie-player>
+            </div>
+            <div class="card-body">
+              <div class="lang es">
+                <h2 class="card-title text-center">Misión</h2>
+                <p class="card-text px-3 pb-3">
+                  Aplicar mis conocimientos de programación para desarrollar
+                  soluciones innovadoras y eficientes, contribuyendo al éxito de
+                  la empresa. Además de facilitar la interacción entre las
+                  personas y la tecnología.
+                </p>
+              </div>
+              <div class="lang en">
+                <h2 class="card-title text-center">Mission</h2>
+                <p class="card-text px-3 pb-3">
+                  Apply my programming knowledge to develop innovative and efficient solutions, contributing to the
+                  success of the company. Additionally, facilitate the interaction between people and technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card animContainer">
+            <!-- Card 2 -->
+            <div class="card-img-top text-center">
+              <lottie-player id="VisionAnim"
+                src="https://lottie.host/d8fbc471-c0f8-4d6a-9d98-bfa573924b90/QAlq2QUxoq.json" autoplay></lottie-player>
+            </div>
+            <div class="card-body">
+              <div class="lang es">
+                <h2 class="card-title text-center">Visión</h2>
+                <p class="card-text px-3 pb-3">
+                  Ser un experto en desarrollo de software, creando aplicaciones
+                  inteligentes, elegantes y seguras que impulsen el progreso
+                  tecnológico y beneficien a la empresa.
+                </p>
+              </div>
+              <div class="lang en">
+                <h2 class="card-title text-center">Vision</h2>
+                <p class="card-text px-3 pb-3">
+                  To be an expert in software development, creating intelligent, elegant, and secure applications that
+                  drive technological progress and benefit the company.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+    <!-- Valores -->
+    <div id="valores">
+      <div class="lang es">
+        <h2 class="text-center">Valores</h2>
+        <div>
+          <h4 style="color: #4bd1fb">Colaboración</h4>
+          <p class="pb-3">
+            He aprendido a trabajar en equipo de manera efectiva, comunicándome
+            claramente y contribuyendo al éxito colectivo del proyecto.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Calidad</h4>
+          <p class="pb-3">
+            Me comprometo con la excelencia en el trabajo, asegurando que el
+            software desarrollado sea confiable, eficiente, seguro y con alto
+            rendimiento.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Respeto</h4>
+          <p class="pb-3">
+            Trato a los demás con dignidad, demostrando empatía, solidaridad y
+            tolerancia, fomentando un ambiente agradable y armonioso en el
+            equipo.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Aprendizaje Continuo</h4>
+          <p class="pb-3">
+            Me esfuerzo por aprender y adaptarme constantemente a nuevas
+            tecnologías, metodologías y tendencias en el desarrollo de software.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Resolución de problemas</h4>
+          <p class="pb-3">
+            Abordo los desafíos con creatividad y lógica, buscando soluciones
+            efectivas y eficientes para los problemas que enfrento.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="lang en">
+        <h2 class="text-center">Values</h2>
+        <div>
+          <h4 style="color: #4bd1fb">Collaboration</h4>
+          <p class="pb-3">
+            I have learned to work effectively in a team, communicating clearly and contributing to the collective
+            success of the project.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Quality</h4>
+          <p class="pb-3">
+            I am committed to excellence in work, ensuring that the developed software is reliable, efficient, secure,
+            and high-performing.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Respect</h4>
+          <p class="pb-3">
+            I treat others with dignity, demonstrating empathy, solidarity, and tolerance, fostering a pleasant and
+            harmonious environment within the team.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Continuous Learning</h4>
+          <p class="pb-3">
+            I strive to constantly learn and adapt to new technologies, methodologies, and trends in software
+            development.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: #4bd1fb">Problem Solving</h4>
+          <p class="pb-3">
+            I approach challenges with creativity and logic, seeking effective and efficient solutions to the problems I
+            encounter.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Experience -->
+  <div id="Experience" class="pb-5">
+
+    <div class="lang es">
+      <h1 class="text-center">Experiencia</h1>
+      <p>
+        Mi experiencia profesional se basa en gran medida en mi formación
+        académica. Aunque aún no he tenido la oportunidad de trabajar en un
+        entorno profesional, los proyectos y trabajos que he realizado durante
+        mi etapa universitaria reflejan mi dedicación, habilidades y
+        conocimientos adquiridos en diferentes áreas de estudio.<br/> <br/>
+        A continuación, presento algunos de estos trabajos, que demuestran mi capacidad para aplicar conceptos teóricos a situaciones prácticas y mi compromiso con el aprendizaje continuo.
+      </p>
+    </div>
+    <div class="lang en">
+      <h1 class="text-center">Experience</h1>
+      <p>
+        My professional experience is largely based on my academic background. Although I have not yet had the
+        opportunity to work in a professional environment, the projects and work I have completed during my university
+        years reflect my dedication, skills, and knowledge acquired in various areas of study. <br/> <br/>
+        Below, I present some of these projects, which demonstrate my ability to apply theoretical concepts to practical situations and my commitment to continuous learning.
+      </p>
+    </div>
+
+    <div class="fluid-container pt-3" id="Viajeros_Solos">
+      <div class="row justify-content-center">
+        <div class="col-md-4 me-2 mb-4 d-flex justify-content-center">
+          <div class="card exp-card">
+            <img src="Imagenes/Proyecto1/viajeros_solos_logo.png" class="card-img-top" alt="..." />
+
+            <div class="card-body black-letter lang es">
+              <h5 class="card-title text-center">Viajeros Solos</h5>
+              <p class="card-text">
+                La creación de una página web enfocada en el sector del
+                turismo para reservar habitaciones, transporte, comida, entre
+                otros.
+              </p>
+              <button type="button" class="btn no-border secondary-color-bg white-letter" data-bs-toggle="modal"
+                data-bs-target="#ViajerosSolosModal">
+                Ver más
+              </button>
+            </div>
+            <div class="card-body black-letter lang en">
+              <h5 class="card-title text-center">Viajeros Solos</h5>
+              <p class="card-text">
+                The creation of a website focused on the tourism sector for booking rooms, transportation, food, and
+                more.
+              </p>
+              <button type="button" class="btn no-border secondary-color-bg white-letter" data-bs-toggle="modal"
+                data-bs-target="#ViajerosSolosModal">
+                View more
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="col-md-3 me-2 d-flex">
+          <div class="card exp-card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body black-letter">
+              <h5 class="card-title text-center">Base de datos para QTV</h5>
+              <p class="card-text">El objetivo era diseñar y construir un modelo de base de datos para gestionar el contenido digital como películas, series y documentales.</p>
+              <button type="button" class="btn btn-primary no-border" style="background-color: #4BD1FB;" data-bs-toggle="modal" data-bs-target="#ViajerosSolosModal">
+                Ver más 
+              </button>
+            </div>
+          </div>
+        </div>-->
+
+        <div class="col-md-4 me-3 d-flex justify-content-center" id="Tu_Salud_Primero">
+          <div class="card exp-card">
+            <img src="Imagenes/Proyecto2/tu_salud_primero_logo.png" class="card-img-top" alt="..." />
+
+            <div class="card-body black-letter lang es">
+              <h5 class="card-title text-center">Su Salud Primero</h5>
+              <p class="card-text">
+                Creación de una página web enfocada en el sector de medicina
+                para la administración de un hospital con sus pacientes.
+              </p>
+              <button type="button" class="btn no-border secondary-color-bg white-letter" data-bs-toggle="modal"
+                data-bs-target="#TuSaludPrimeroModal">
+                Ver más
+              </button>
+            </div>
+            <div class="card-body black-letter lang en">
+              <h5 class="card-title text-center">Su Salud Primero</h5>
+              <p class="card-text">
+                Creation of a website focused on the medical sector for the administration of a hospital and its
+                patients.
+              </p>
+              <button type="button" class="btn no-border secondary-color-bg white-letter" data-bs-toggle="modal"
+                data-bs-target="#TuSaludPrimeroModal">
+                View more
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="ViajerosSolosModal" tabindex="-1" aria-labelledby="ViajerosSolosModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title black-letter" id="ViajerosSolosModalLabel">
+              Viajeros Solos
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="black-letter lang es">
+              <p>
+                La creación de una página web enfocada en el sector turístico
+                fue llevada a cabo con un enfoque predominantemente en
+                frontend, con una mínima utilización de backend. La base de
+                datos fue gestionada mediante MongoDB para la administración
+                de usuarios. La gestión de versiones se realizó a través de
+                GitHub y la administración del equipo se coordinó mediante
+                Asana.
+              </p>
+              <p>
+                Se formó un equipo denominado Darkcode, con su página
+                correspondiente, y fui designado como coordinador del mismo.
+                La página web ofrecía diversas funcionalidades, incluyendo
+                roles (usuario, administrador, dueño de servicio), sistema de
+                inicio de sesión, reserva de servicios (hoteles, transporte,
+                comida, entretenimiento), reseñas y pagos.
+              </p>
+            </div>
+            <div class="black-letter lang en">
+              <p>
+                The creation of a website focused on the tourism sector was carried out with a predominantly frontend
+                approach, with minimal use of backend. The database was managed using MongoDB for user administration.
+                Version control was handled through GitHub, and team management was coordinated via Asana.
+              </p>
+              <p>
+                A team named Darkcode was formed, with its corresponding webpage, and I was appointed as its
+                coordinator. The website offered various functionalities, including roles (user, administrator, service
+                owner), login system, service reservations (hotels, transportation, food, entertainment), reviews, and
+                payments.
+              </p>
+            </div>
+
+            <div id="carouselViajeros" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-indicators">
+                <button type="button" data-bs-target="#carouselViajeros" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselViajeros" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselViajeros" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselViajeros" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselViajeros" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselViajeros" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_landing.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_login.png" class="d-block regular_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_booking.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_payment.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_calification.png" class="d-block long_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto1/viajeros_solos_reports.png" class="d-block long_img" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#carouselViajeros"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#carouselViajeros"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="modal-footer">
+              <div class="lang es">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+              </div>
+              <div class="lang en">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="TuSaludPrimeroModal" tabindex="-1" aria-labelledby="TuSaludPrimeroModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title black-letter" id="TuSaludPrimeroModalLabel">
+              Tu Salud Primero
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="black-letter lang es">
+              <p>
+                Creación de una página web enfocada en el sector de medicina. A diferencia de Viajeros
+                Solos, esta página fue realizada con un backend más extenso en C#, junto a una base de
+                datos en Microsoft Azure. Además, el manejo de versiones y la administración del equipo
+                también se realizó en Azure.
+
+              </p>
+              <p>
+                Mi puesto en este proyecto fue el de QA teniendo que dar retroalimentación al trabajo de mis compañeros
+                asegurando un producto ordenado, atractivo y funcional. La página ofrecía
+                roles (pacientes, doctores, enfermeros, administradores), sistema de inicio de sesión, agenda de citas,
+                perfiles personalizables, historiales médicos, recetas médicas, sistema de pagos, reportes
+                administrativos, entre otros.
+              </p>
+            </div>
+            <div class="black-letter lang en">
+              <p>
+                Creation of a website focused on the medical sector. Unlike "Viajeros Solos," this website was developed
+                with a more extensive backend in C#, along with a database in Microsoft Azure. Additionally, version
+                control and team management were also handled in Azure.
+
+              </p>
+              <p>
+                My role in this project was as QA, where I provided feedback on my colleagues' work, ensuring an
+                organized, attractive, and functional product. The website offered roles (patients, doctors, nurses,
+                administrators), login system, appointment scheduling, customizable profiles, medical histories,
+                prescriptions, payment system, administrative reports, among other features.
+              </p>
+            </div>
+
+            <div id="carouselTuSalud" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-indicators">
+                <button type="button" data-bs-target="#carouselTuSalud" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselTuSalud" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselTuSalud" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselTuSalud" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselTuSalud" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselTuSalud" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/Proyecto2/tu_salud_primero_landing.png" class="d-block regular_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto2/tu_salud_primero_landing2.png" class="d-block regular_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto2/tu_salud_primero_carrousel.png" class="d-block regular_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto2/tu_salud_primero_login.png" class="d-block regular_img" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto2/tu_salud_primero_appointments.png" class="d-block regular_img"
+                    alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/Proyecto2/tu_salud_primero_checkout.png" class="d-block regular_img" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev custom-carousel-control" type="button"
+                data-bs-target="#carouselTuSalud" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-control" type="button"
+                data-bs-target="#carouselTuSalud" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+            <div class="modal-footer">
+              <div class="lang es">
+                <button type="button" class="btn btn-secondary lang es" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+              </div>
+              <div class="lang en">
+                <button type="button" class="btn btn-secondary lang en" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>                     
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- Curriculum Vitae -->
+  <div id="Resume" class="pb-5">
+    <div class="lang es">
+      <h1 class="text-center">Curriculum Vitae</h1>
+      <p>
+        Aquí puedes descargar mi Currículum Vitae en ambos idiomas, inglés y
+        español. He preparado estos documentos para ofrecer una visión detallada
+        de mi formación académica, habilidades y logros.<br/><br/>Elige el idioma que
+        prefieras y obtén toda la información sobre mi perfil profesional.
+      </p>
+    </div>
+    <div class="lang en">
+      <h1 class="text-center">Curriculum Vitae</h1>
+      <p>
+        Here you can download my Curriculum Vitae in both English and Spanish. I have prepared these documents to provide a detailed view of my academic background, skills, and achievements.<br/><br/>Choose the language you prefer and get all the information about my professional profile.
+      </p>
+    </div>
+
+    <div class="fluid-container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 me-2 pt-5">
+          <div>
+            <h5 class="lang es">Curriculum Español</h5>
+            <h5 class="lang en">Spanish CV</h5>
+            <div class="row curriculum_margin">
+              <div class="card CV_ES secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <div class="lang es">
+                    <a href="Curriculums/CV-Español_V2.pdf" target="_blank" class="btn white-letter">Vista Previa</a>
+                  </div>
+                  <div class="lang en">
+                    <a href="Curriculums/CV-Español_V2.pdf" target="_blank" class="btn white-letter">Preview</a>
+                  </div>                  
+                </div>
+              </div>
+
+              <div class="card CV_EN secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <div class="lang es">
+                    <a href="Curriculums/CV-Español_V2.pdf" download="CV-Español_V2.pdf"
+                    class="btn white-letter">Descargar</a>
+                  </div>
+                  <div class="lang en">
+                    <a href="Curriculums/CV-Español_V2.pdf" download="CV-Español_V2.pdf"
+                    class="btn white-letter">Download</a>
+                  </div>                       
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-5">
+            <h5 class="lang es">Curriculum Inglés</h5>
+            <h5 class="lang en">English CV</h5>
+            <div class="row">
+              <div class="card CV_EN secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <div class="lang es">
+                    <a href="Curriculums/CV-Ingles_V2.pdf" target="_blank" class="btn white-letter">Vista Previa</a>
+                  </div>
+                  <div class="lang en">
+                    <a href="Curriculums/CV-Ingles_V2.pdf" target="_blank" class="btn white-letter">Preview</a>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="card CV_EN secondary-color-bg col-md-5 me-2 d-flex">
+                <div class="card-body text-center">
+                  <div class="lang es">
+                    <a href="Curriculums/CV-Ingles_V2.pdf" download="CV-Ingles_V2.pdf"
+                    class="btn white-letter">Descargar</a>
+                  </div>
+                  <div class="lang en">
+                    <a href="Curriculums/CV-Ingles_V2.pdf" download="CV-Ingles_V2.pdf"
+                    class="btn white-letter">Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 me-2 d-flex">
+          <lottie-player src="https://lottie.host/abdcda61-3471-4373-a15f-0629814eef81/popQIVt0h5.json" autoplay
+            loop></lottie-player>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- CONTACTS -->
+  <div id="Contacts" class="padding-enorme">
+    <div class="lang es">
+      <h1 class="text-center">Contactos</h1>
+      <p>
+        Me encantaría saber de ti. Si tienes alguna pregunta, comentario o
+        simplemente deseas ponerte en contacto conmigo, por favor completa
+        el formulario a continuación.<br/><br/>Recuerda llenar todos los espacios para
+        poder enviar el formulario.
+      </p>
+    </div>
+    <div class="lang en">
+      <h1 class="text-center">Contacts</h1>
+      <p>
+        I would love to hear from you. If you have any questions, comments, or simply wish to get in touch with me, please fill out the form below.<br/><br/>Remember to complete all the fields in order to submit the form.
+      </p>
+    </div>
+    
+    <div class="justify-content-center">
+      <div class="formContainer" style="background-color: #0071c9">
+        <form id="contactForm">
+          <label class="lang es" for="name">Nombre:</label>
+          <label class="lang en" for="name">Name:</label><br />
+          <input class="w-75 rounded mb-2" type="text" id="name" name="name" /><br />
+          <label class="lang es" for="email">Correo Electrónico:</label>
+          <label class="lang en" for="email">Email:</label><br />
+          <input class="w-75 rounded mb-2" type="email" id="email" name="email" /><br />
+          <label class="lang es" for="message">Mensaje:</label>
+          <label class="lang en" for="message">Message:</label><br />
+          <textarea class="w-100 rounded" id="message" name="message"></textarea><br /><br />
+          <div class="lang es">
+            <button class="rounded" type="submit">Enviar</button>
+          </div>
+          <div class="lang en">
+            <button class="rounded" type="submit">Submit</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    
+
+    <div class="contacts-container">
+      <h5 class="text-center lang es">Otros contactos</h5>
+      <h5 class="text-center lang en">Other contacts</h5>
+      <div class="container">
+        <p class="text-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+          gabriel.caravaca9@gmail.com
+        </p>
+        <div class="pb-4">
+          <a class="btn btn-success w-100 mb-4" href="https://wa.me/50689776523" target="_blank">
+            <img src="Imagenes/Contacts/Whatsapp.png" alt="Phone">
+            +503 8977 - 6523
+          </a>
+          <a class="btn btn-dark w-100 mb-4" href="https://github.com/GabrielCaravacaGarrido">
+            <img src="Imagenes/Contacts/GitHub.png" alt="GitHub">
+            GitHub
+          </a><br/>
+          <a class="btn btn-primary w-100" href="https://www.linkedin.com/in/gabriel-caravaca-garrido-421335313/">
+            <img src="Imagenes/Contacts/Linkedin.png" alt="LinkedIn">
+            LinkedIn
+          </a>
+        </div>
+
+
+
+
+        <!--
+        <div class="d-flex justify-content-center" id="OtherContacts">
+          <a class="btn btn-dark" href="https://github.com/GabrielCaravacaGarrido">
+            <img src="Imagenes/Contacts/GitHub.png" alt="GitHub">
+            GitHub
+          </a>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/gabriel-caravaca-garrido-421335313/">
+            <img src="Imagenes/Contacts/Linkedin.png" alt="LinkedIn">
+            LinkedIn
+          </a>
+        </div>
+        -->
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- interactividad Lottie JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+<!-- libreria microinteracciones -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+<!-- libreria animacion AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</html>

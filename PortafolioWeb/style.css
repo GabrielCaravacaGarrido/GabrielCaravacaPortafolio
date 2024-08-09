@@ -1,0 +1,556 @@
+body {
+  background-color: #051D40 !important;
+  color: white !important;
+  padding-left: 5.9vw;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+h1 {
+  font-size: 5vw !important;
+}
+
+@media (max-width: 770px) {
+  body{
+    padding-left: 0;
+  }
+  h1 {
+    font-size: 10vw !important;
+  }
+}
+
+
+
+
+/***** COLORS *****/
+.black-letter{
+  color: black !important;
+}
+.white-letter{
+  color: white !important;
+}
+
+.primary-color-bg{
+  background-color: #051D40 !important;
+}
+.secondary-color-bg{
+  background-color: #0071C9 !important;
+}
+.terciary-color-bg{
+  background-color: #4BD1FB !important;
+}
+
+
+
+
+
+/***** DISPLAY *****/
+.lang{
+  display: none;
+}
+
+
+
+
+
+/***** SIDEBAR *****/
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  width: 6%;
+  height: 100%;
+  background-color: #0071C9 !important;
+  transition: all 0.3s ease;
+}
+
+.sidebarButtonSize{
+  padding-top: 4vh !important;
+  padding-bottom: 4vh !important;
+  width: 100%;
+}
+
+.nav-link{
+  transition: background-color 0.3s ease;
+}
+.nav-link:hover{
+  background-color: #051d407c !important;
+}
+
+.sidebarImage{
+  width: 100%;
+}
+
+.active{
+  background-color: #051D40 !important;
+}
+
+@media (max-width: 770px) {
+  #sidebarLogo{
+    display: none !important;
+  }
+
+  #sidebar {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .sidebarImage{
+    width: 100%;
+  }
+
+  .sidebarButtonSize{
+    padding: 0 10% !important;
+    margin: 0 !important;
+    width: 17vw;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    flex: 1; /* Hace que cada item ocupe el mismo espacio */
+    text-align: center;
+  }
+
+  .switch-container {
+    display: none; /* Hide the switch in bottom bar */
+  }
+}
+
+
+/******** LANGUAGE SWITCH ********/
+.switch {
+  position: relative;
+  width: 50%;
+  height: 4vh;
+}
+@media (max-width: 770px) {
+  .switch {
+    height: 3vh;
+  }
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch-label {
+  margin: 0 0.2vw;
+  font-size: 0.7rem;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #051D40;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 70%;
+  width: 35%;
+  left: 7%;
+  bottom: 15%;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(150%);
+  -ms-transform: translateX(150%);
+  transform: translateX(150%);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+/***** SCROLLTOP *****/
+#scrollTopBtn {
+  position: fixed;
+  bottom: 3%;
+  right: 1.5%;
+  display: none;
+  border: none;
+  background: none;
+  padding: 1vh 1vw;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollTopBtn img {
+  width: 3vw;
+  height: 6vh;
+  transition: filter 0.3s;
+}
+
+#scrollTopBtn:hover img {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 770px) {
+  #scrollTopBtn{
+    bottom: 7%;
+  }
+  #scrollTopBtn img {
+    width: 10vw;
+    height: 5vh;
+  }
+}
+
+
+
+
+/***** BANNER *****/
+#banner{
+  margin-bottom: 2vh;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+}
+.background-image {
+  width: 100%;
+}
+.foreground-image {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 50%;
+  object-fit:cover;
+}
+
+
+
+
+/***** PERFIL PROFESIONAL *****/
+#perfil-profesional{
+  padding-left: 15.5vw;
+  padding-right: 2vw;
+  padding-bottom: 5%;
+}
+
+#perfil-profesional p{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 770px) {
+  #perfil-profesional p{
+    font-size: 1rem;
+  }
+}
+
+
+
+/***** SOBRE MI *****/
+#sobre-mi h2{
+  font-size: 3vw !important;
+}
+
+#sobre-mi p{
+  font-size: clamp(0.8rem, 1.6vw, 1.3rem);
+}
+
+.card-img-top{
+  height: 35%;
+}
+
+.animContainer{
+  background-color: #0071C9 !important;
+  border-radius: 50px !important;
+  width: 90%;
+  max-width: 400px;
+  min-width: 280px;
+
+  height: auto;
+  max-height: 540px;
+  min-height: 250px;
+}
+
+.sobre-mi-card-margin{
+  margin: 0 !important;
+}
+
+#MissionAnim{
+  padding-left: 20px;
+}
+
+#VisionAnim{
+  padding: 0 !important;
+}
+
+@media (max-width: 770px) {
+  #sobre-mi h2{
+    font-size: 6vw !important;
+  }
+  
+  #sobre-mi p{
+    font-size: 4vw;
+  }
+
+  .animContainer {
+    width: 80%; /* Usa todo el ancho disponible en pantallas pequeñas */
+    max-width: none; /* Elimina el límite de ancho */
+    min-width: 80%; /* Asegura que use todo el ancho */
+  }
+
+  .card-img-top {
+    height: 20vh; /* Ajusta la altura en pantallas pequeñas */
+  }
+  
+}
+
+
+#valores{
+  padding-top: 5vh;
+  padding-left: 13vw;
+  padding-right: 13vw;
+}
+
+
+
+
+
+/***** EXPERIENCE *****/
+#Experience{
+  padding-left: 6vw;
+  padding-right: 4vw;
+}
+
+#Experience p{
+  font-size: 1.5vw;
+}
+
+
+.exp-card{
+  /*border-radius: 50px !important;*/
+  width: 30vw;
+  height: 70vh;
+  border: none !important;
+}
+
+@media (min-width: 1800px) {
+  .exp-card {
+    height: 58vh;
+  } 
+}
+
+.no-border{
+  border: none !important;
+}
+
+#Viajeros_Solos button, #Tu_Salud_Primero button {
+  transition: background-color 0.3s ease;
+  margin-top: 12%;
+}
+
+#Viajeros_Solos button:hover, #Tu_Salud_Primero button:hover {
+  background-color: #4BD1FB !important;
+}
+
+@media (max-width: 770px) {
+  #Experience p{
+    font-size: 4vw;
+  }
+
+  .exp-card {
+    width: 80%;
+    height: 48vh;
+  } 
+
+  .exp-card img{
+    padding: 1vh 4vw;
+  }
+
+  #Viajeros_Solos button, #Tu_Salud_Primero button {
+    margin-top: 0;
+  }
+}
+
+
+.carousel-inner{
+  justify-content: center;
+  align-items: center !important;
+  height: 80vh;
+}
+
+.long_img {
+  max-height: auto;
+  width: auto;
+  margin: 0 auto;
+}
+
+.regular_img{
+  max-height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .long_img{
+    width: 80%;
+  }
+  .carousel-inner{
+    height: auto;
+  }
+}
+
+.custom-indicators button {
+  background-color: black !important; 
+}
+
+.custom-indicators .active {
+  background-color: #4BD1FB !important;
+}
+
+.custom-indicators button:hover {
+  background-color: #4b91fb !important;
+}
+
+
+.custom-carousel-control .carousel-control-prev-icon,
+.custom-carousel-control .carousel-control-next-icon {
+    background-color: #051D40 !important;
+}
+
+.custom-carousel-control:hover .carousel-control-prev-icon,
+.custom-carousel-control:hover .carousel-control-next-icon {
+    background-color: darkgrey;
+}
+
+
+
+
+/***** Curriculum Vitae *****/
+#Resume{
+  padding-left: 6vw;
+  padding-right: 4vw;
+}
+
+#Resume p{
+  font-size: 1.5vw;
+}
+
+@media (max-width: 770px) {
+  #Resume p{
+    font-size: 4vw;
+  } 
+}
+
+.curriculum_margin{
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+.CV_ES, .CV_EN{
+  width: 15vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.CV_ES:hover, .CV_EN:hover{
+  background-color: #4BD1FB !important;
+}
+
+
+
+
+/***** CONTACTS *****/
+#Contacts{
+  padding-left: 6vw;
+  padding-right: 4vw;
+  padding-bottom: 15vh;
+}
+#Contacts p, #Contacts a{
+  font-size: 1.5vw;
+}
+@media (max-width: 770px) {
+  #Contacts p, #Contacts a{
+    font-size: 4vw;
+  }
+}
+
+
+.formContainer{
+  margin: 5vh 20vw;
+  padding: 2vh 0;
+}
+
+#contactForm{
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+@media (max-width: 770px) {
+  .formContainer{
+    margin: 0;
+  }
+}
+
+#contactForm button{
+  transition: background-color 0.3s ease;
+}
+#contactForm button:hover{
+  background-color: #4BD1FB;
+}
+
+#message{
+  height: 18vh;
+}
+
+
+.contacts-container{
+  padding: 5vh 26vw !important;
+}
+
+.contacts-container img{
+  margin-right: 0.6vw;
+  width: 2vw;
+}
+
+@media (max-width: 770px) {
+  .contacts-container{
+    padding: 5vh 5vw !important;
+  }
+}
